@@ -136,7 +136,7 @@ describe('Basic functionality', function() {
       .expect(200, helpText, done);
   });
 
-  it('GET /http:/notenoughslashes', function(done) {
+  it.skip('GET /http:/notenoughslashes', function(done) {
     // 'http:/notenoughslashes' is an invalid URL.
     request(cors_anywhere)
       .get('/http:/notenoughslashes')
